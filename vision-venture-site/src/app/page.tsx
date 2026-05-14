@@ -3,6 +3,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { TiltCard } from "@/components/ui/tilt-card";
 import { BentoGrid, type BentoItem } from "@/components/ui/bento-grid";
 import { BuiltForOpsProfileCard } from "@/components/home/built-for-ops-profile-card";
+import { AiOpsAuditForm } from "@/components/home/AiOpsAuditForm";
 import { TrustBadge } from "@/components/ui/trust-badge";
 import {
   Activity,
@@ -505,144 +506,7 @@ export default function Home() {
               </div>
 
               <div className="md:col-span-7">
-                <form
-                  name="ai-ops-audit"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                  action="/thanks"
-                  className="grid gap-4"
-                >
-                  <input type="hidden" name="form-name" value="ai-ops-audit" />
-                  <p className="hidden">
-                    <label>
-                      Don't fill this out: <input name="bot-field" />
-                    </label>
-                  </p>
-
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <label className="grid gap-2 text-sm">
-                      <span className="vv-muted">Name</span>
-                      <input
-                        className="vv-focus-ring h-12 rounded-xl bg-black/20 px-4 ring-1 ring-white/10"
-                        name="name"
-                        autoComplete="name"
-                        required
-                      />
-                    </label>
-                    <label className="grid gap-2 text-sm">
-                      <span className="vv-muted">Email</span>
-                      <input
-                        className="vv-focus-ring h-12 rounded-xl bg-black/20 px-4 ring-1 ring-white/10"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        required
-                      />
-                    </label>
-                  </div>
-
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <label className="grid gap-2 text-sm">
-                      <span className="vv-muted">Company</span>
-                      <input
-                        className="vv-focus-ring h-12 rounded-xl bg-black/20 px-4 ring-1 ring-white/10"
-                        name="company"
-                        autoComplete="organization"
-                        required
-                      />
-                    </label>
-                    <label className="grid gap-2 text-sm">
-                      <span className="vv-muted">Role</span>
-                      <select
-                        className="vv-focus-ring h-12 rounded-xl bg-black/20 px-4 ring-1 ring-white/10"
-                        name="role"
-                        defaultValue=""
-                        required
-                      >
-                        <option value="" disabled>
-                          Select
-                        </option>
-                        <option>Owner / Operator</option>
-                        <option>VP / Director of Ops</option>
-                        <option>Founder</option>
-                        <option>Executive</option>
-                        <option>Manager</option>
-                        <option>Other</option>
-                      </select>
-                    </label>
-                  </div>
-
-                  <label className="grid gap-2 text-sm">
-                    <span className="vv-muted">
-                      What are you trying to automate?
-                    </span>
-                    <textarea
-                      className="vv-focus-ring min-h-28 rounded-xl bg-black/20 px-4 py-3 ring-1 ring-white/10"
-                      name="automation_goal"
-                      required
-                    />
-                  </label>
-
-                  <fieldset className="grid gap-2 text-sm">
-                    <legend className="vv-muted">Systems in use</legend>
-                    <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                      {[
-                        "Google Workspace",
-                        "Microsoft 365",
-                        "Slack",
-                        "HubSpot",
-                        "Salesforce",
-                        "QuickBooks",
-                        "Notion",
-                        "Airtable",
-                      ].map((label) => (
-                        <label
-                          key={label}
-                          className="flex items-center gap-2 rounded-xl bg-black/10 px-3 py-2 ring-1 ring-white/10"
-                        >
-                          <input
-                            className="accent-cyan-300"
-                            type="checkbox"
-                            name="systems"
-                            value={label}
-                          />
-                          <span className="vv-muted">{label}</span>
-                        </label>
-                      ))}
-                    </div>
-                  </fieldset>
-
-                  <label className="grid gap-2 text-sm">
-                    <span className="vv-muted">Timeline</span>
-                    <select
-                      className="vv-focus-ring h-12 rounded-xl bg-black/20 px-4 ring-1 ring-white/10"
-                      name="timeline"
-                      defaultValue=""
-                      required
-                    >
-                      <option value="" disabled>
-                        Select
-                      </option>
-                      <option>ASAP</option>
-                      <option>Within 30 days</option>
-                      <option>Within 90 days</option>
-                      <option>Exploring / not sure</option>
-                    </select>
-                  </label>
-
-                  <button
-                    className="vv-focus-ring mt-2 inline-flex h-12 items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90"
-                    type="submit"
-                  >
-                    Request audit
-                  </button>
-
-                  <p className="vv-muted text-xs leading-6">
-                    By submitting, you agree to be contacted about this request.
-                    No spam.
-                  </p>
-                </form>
+                <AiOpsAuditForm />
               </div>
             </div>
           </div>
