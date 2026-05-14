@@ -21,6 +21,9 @@ node_modules/
 out/
 .netlify/
 
+# Project-local npm cache
+vision-venture-site/.npm-cache/
+
 # Local IDEs
 .vscode/
 .idea/
