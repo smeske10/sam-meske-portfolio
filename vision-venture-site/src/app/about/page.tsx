@@ -52,7 +52,7 @@ export default function AboutPage() {
 
           <div className="vv-container relative py-16 md:py-24">
             <SectionTitle
-              eyebrow="AI Product Strategy Â· Healthcare Research Â· Systems Engineering"
+              eyebrow="AI Product Strategy · Healthcare Research · Systems Engineering"
               title="I sit at the intersection of research rigor, technical depth, and product strategy — and that combination is rare."
               subtitle="Most AI product leaders come from design, engineering, or business. My path ran through clinical research, population health analytics, and hands-on AI systems engineering. That background shapes everything about how I approach AI products: methodically, with an eye toward governance, and with the operator instincts to know what actually ships."
             />
@@ -162,8 +162,8 @@ export default function AboutPage() {
         </section>
 
         <section id="credentials" className="vv-container py-12 md:py-16">
-          <div className="grid gap-10 md:grid-cols-12">
-            <div className="md:col-span-4">
+          <div className="flex flex-col gap-6">
+            <div className="max-w-3xl">
               <h2 className="text-2xl font-semibold tracking-tight">
                 Credentials &amp; background snapshot
               </h2>
@@ -171,7 +171,7 @@ export default function AboutPage() {
                 Quick highlights.
               </p>
             </div>
-            <div className="md:col-span-8">
+            <div className="-mx-6 px-6 md:mx-0 md:px-0">
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
                 {[
                   { k: "Education", v: "MS · MBA · B.S. Human Biology" },

@@ -97,12 +97,11 @@ export default function Home() {
                   <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
                   Systems-oriented AI product strategist
                 </p>
-                <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-                  Sam Meske
-                </h1>
-                <h2 className="mt-3 max-w-3xl text-xl font-semibold tracking-tight text-white/90 md:text-2xl">
+                <h1 className="sr-only">Sam Meske</h1>
+                <div className="text-4xl font-semibold tracking-tight md:text-5xl">
                   AI Product Strategy, Innovation Systems, Research &amp; Business Consulting
-                </h2>
+                </div>
+
                 <p className="vv-muted mt-5 max-w-2xl text-lg leading-8">
                   I design and deploy AI-enabled systems that reduce operational
                   drag, improve decision-making, and ship safely in trust- and
