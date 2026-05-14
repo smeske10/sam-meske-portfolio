@@ -16,15 +16,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sam Meske — AI Product Strategy & Systems Engineering",
-    template: "%s — Sam Meske",
+    default: "Sam Meske | AI Product Strategist, Innovation Leader & Consultant",
+    template: "%s | Sam Meske",
   },
   description:
     "Systems-oriented AI product strategist with a background in healthcare research and production AI systems.",
   applicationName: "Sam Meske Portfolio",
   metadataBase: new URL(siteUrl),
   openGraph: {
-    title: "Sam Meske — AI Product Strategy & Systems Engineering",
+    title: "Sam Meske | AI Product Strategist, Innovation Leader & Consultant",
     description:
       "Systems-oriented AI product strategist with a background in healthcare research and production AI systems.",
     type: "website",
