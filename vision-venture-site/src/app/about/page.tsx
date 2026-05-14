@@ -4,6 +4,9 @@ export const metadata = {
   title: "About — Sam Meske",
   description:
     "AI product strategist with a background in clinical research, healthcare analytics, and production AI engineering. Associate Director of Research at Breastcancer.org.",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 function SectionTitle({

@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     "Systems-oriented AI product strategist with a background in healthcare research and production AI systems.",
   applicationName: "Sam Meske Portfolio",
   metadataBase: new URL(siteUrl),
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Sam Meske | AI Product Strategist, Innovation Leader & Consultant",
     description:
@@ -40,13 +43,49 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Sam Meske",
+    url: siteUrl,
+    jobTitle:
+      "AI Product Strategist, Innovation Leader & Consultant",
+    worksFor: {
+      "@type": "Organization",
+      name: "Breastcancer.org",
+    },
+    sameAs: [
+      "https://www.linkedin.com/in/sam-meske-ms-mba/",
+      "https://github.com/smeske10",
+    ],
+  };
+
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Sam Meske Portfolio",
+    url: siteUrl,
+  };
+
   return (
     <html
       lang="en"
       suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

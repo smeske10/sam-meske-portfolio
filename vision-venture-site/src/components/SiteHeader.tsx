@@ -10,7 +10,7 @@ export function SiteHeader() {
         <Link href="/#top" className="flex items-center gap-3">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10">
             <img
-              alt="Headshot placeholder"
+              alt="Sam Meske logo"
               src="https://ik.imagekit.io/i6kon7cps/image%20(1).png"
               className="h-full w-full object-cover"
             />
@@ -50,4 +50,3 @@ export function SiteHeader() {
     </header>
   );
 }
-

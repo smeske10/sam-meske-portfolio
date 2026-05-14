@@ -98,8 +98,11 @@ export default function Home() {
                   Systems-oriented AI product strategist
                 </p>
                 <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
-                  AI systems &amp; workflow design for real-world operations
+                  Sam Meske
                 </h1>
+                <h2 className="mt-3 max-w-3xl text-xl font-semibold tracking-tight text-white/90 md:text-2xl">
+                  AI Product Strategy, Innovation Systems, Research &amp; Business Consulting
+                </h2>
                 <p className="vv-muted mt-5 max-w-2xl text-lg leading-8">
                   I design and deploy AI-enabled systems that reduce operational
                   drag, improve decision-making, and ship safely in trust- and

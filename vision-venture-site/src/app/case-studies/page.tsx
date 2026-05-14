@@ -16,6 +16,9 @@ export const metadata = {
   title: "Case Studies",
   description:
     "Selected product and innovation case studies focused on systems, governance, decision-making, and outcomes.",
+  alternates: {
+    canonical: "/case-studies",
+  },
 };
 
 function Tag({ children }: { children: React.ReactNode }) {
