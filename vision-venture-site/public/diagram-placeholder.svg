@@ -1,0 +1,33 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C5CFF" stop-opacity="0.22"/>
+      <stop offset="0.55" stop-color="#22D3EE" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.06"/>
+    </linearGradient>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect x="0" y="0" width="1200" height="675" rx="32" fill="rgba(255,255,255,0.03)"/>
+  <rect x="24" y="24" width="1152" height="627" rx="24" fill="url(#g)"/>
+  <rect x="24" y="24" width="1152" height="627" rx="24" fill="url(#grid)" opacity="0.7"/>
+  <path d="M100 510C210 430 310 420 430 474C560 532 660 544 790 500C930 448 1040 438 1120 478" stroke="rgba(0,0,0,0.35)" stroke-width="10" stroke-linecap="round"/>
+  <path d="M100 510C210 430 310 420 430 474C560 532 660 544 790 500C930 448 1040 438 1120 478" stroke="rgba(234,240,255,0.35)" stroke-width="6" stroke-linecap="round"/>
+  <rect x="72" y="82" width="1056" height="72" rx="18" fill="rgba(0,0,0,0.20)" stroke="rgba(255,255,255,0.12)"/>
+  <rect x="92" y="102" width="260" height="12" rx="6" fill="rgba(234,240,255,0.34)"/>
+  <rect x="92" y="124" width="380" height="10" rx="5" fill="rgba(234,240,255,0.20)"/>
+  <rect x="72" y="184" width="1056" height="384" rx="24" fill="rgba(0,0,0,0.16)" stroke="rgba(255,255,255,0.10)"/>
+  <g opacity="0.9">
+    <rect x="108" y="228" width="280" height="108" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="420" y="228" width="300" height="108" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="752" y="228" width="340" height="108" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="108" y="366" width="984" height="64" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="108" y="452" width="560" height="92" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+    <rect x="692" y="452" width="400" height="92" rx="18" fill="rgba(0,0,0,0.18)" stroke="rgba(255,255,255,0.12)"/>
+  </g>
+  <text x="96" y="632" fill="rgba(234,240,255,0.70)" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    Diagram placeholder — replace with your system map export (SVG/PNG)
+  </text>
+</svg>
+

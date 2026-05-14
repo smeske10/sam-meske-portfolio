@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+:root {
+  /* Light mode tokens (default) */
+  --background: #F7F5FF;
+  --foreground: #0B1020;
+  --muted: rgba(11, 16, 32, 0.68);
+  --card: rgba(11, 16, 32, 0.04);
+  --card-border: rgba(11, 16, 32, 0.10);
+  --accent: #7C5CFF;
+  --accent-2: #22D3EE;
+  --shadow: rgba(11, 16, 32, 0.16);
+
+  --tint-1: rgba(11, 16, 32, 0.06);
+  --tint-2: rgba(11, 16, 32, 0.10);
+  --line: rgba(11, 16, 32, 0.12);
+
+  --radius: 0.85rem;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: #070A12;
+  --foreground: #EAF0FF;
+  --muted: rgba(234, 240, 255, 0.72);
+  --card: rgba(255, 255, 255, 0.06);
+  --card-border: rgba(255, 255, 255, 0.10);
+  --shadow: rgba(0, 0, 0, 0.45);
+
+  --tint-1: rgba(255, 255, 255, 0.05);
+  --tint-2: rgba(255, 255, 255, 0.10);
+  --line: rgba(255, 255, 255, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+::selection {
+  background: rgba(124, 92, 255, 0.35);
+}
+
+.vv-container {
+  @apply mx-auto w-full max-w-6xl px-6;
+}
+
+.vv-card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 40px 80px var(--shadow);
+}
+
+.vv-muted {
+  color: var(--muted);
+}
+
+.vv-tint-1 {
+  background: var(--tint-1);
+}
+
+.vv-tint-2 {
+  background: var(--tint-2);
+}
+
+.vv-line {
+  border-color: var(--line);
+}
+
+.vv-focus-ring {
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-300 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent;
+}
+
+.vv-link {
+  color: var(--muted);
+  transition: color 150ms ease;
+}
+
+.vv-link:hover {
+  color: var(--foreground);
+}
+
+.vv-panel {
+  background: var(--tint-1);
+  border: 1px solid var(--line);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

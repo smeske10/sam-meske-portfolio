@@ -1,0 +1,345 @@
+﻿import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
+export const metadata = {
+  title: "About — Sam Meske",
+  description:
+    "AI product strategist with a background in clinical research, healthcare analytics, and production AI engineering. Associate Director of Research at Breastcancer.org.",
+};
+
+function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+}: {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}) {
+  return (
+    <div>
+      {eyebrow ? (
+        <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs ring-1 ring-white/10">
+          <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
+          {eyebrow}
+        </p>
+      ) : null}
+      <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">
+        {title}
+      </h1>
+      {subtitle ? (
+        <p className="vv-muted mt-5 max-w-4xl text-base leading-8 md:text-lg">
+          {subtitle}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+export default function AboutPage() {
+  return (
+    <div className="flex flex-col min-h-full">
+      <SiteHeader />
+
+      <main className="flex-1">
+        <section id="opening" className="relative overflow-hidden">
+          <div className="pointer-events-none absolute inset-0">
+            <div className="absolute left-1/2 top-[-220px] h-[520px] w-[980px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(124,92,255,0.34),transparent_60%)] blur-2xl" />
+            <div className="absolute right-[-240px] top-[180px] h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.20),transparent_60%)] blur-2xl" />
+          </div>
+
+          <div className="vv-container relative py-16 md:py-24">
+            <SectionTitle
+              eyebrow="AI Product Strategy Â· Healthcare Research Â· Systems Engineering"
+              title="I sit at the intersection of research rigor, technical depth, and product strategy — and that combination is rare."
+              subtitle="Most AI product leaders come from design, engineering, or business. My path ran through clinical research, population health analytics, and hands-on AI systems engineering. That background shapes everything about how I approach AI products: methodically, with an eye toward governance, and with the operator instincts to know what actually ships."
+            />
+          </div>
+        </section>
+
+        <section id="narrative" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                The career narrative
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                This is the one section meant to be read, not scanned.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <div className="vv-card rounded-3xl p-8 md:p-10">
+                <div className="space-y-7 text-sm leading-8 md:text-base md:leading-8">
+                  <p className="vv-muted">
+                    I started in life sciences — B.S. in Human Biology at
+                    Duquesne, M.S. in Exercise Science at Bloomsburg where my
+                    thesis work involved EMG signal analysis across resistance
+                    training conditions. That sounds far from AI product
+                    strategy, but it built something essential: a deep respect
+                    for research methodology, measurement validity, and what it
+                    actually means to draw defensible conclusions from data. I
+                    learned to design studies, run
+                    statistical analyses, and communicate findings. That foundation has never left me.
+                  </p>
+                  <p className="vv-muted">
+                    From there I moved into healthcare operations and clinical
+                    research management at Main Line Health — eventually as
+                    Project Manager on a Phase III investigator-initiated IND
+                    trial, coordinating FDA submissions, managing research
+                    staff, and overseeing a portfolio of seventeen resident
+                    research projects simultaneously. I added an MBA at night
+                    during this period to understand the
+                    organizational and strategic layer, not just the operational
+                    one. By the time I joined Breastcancer.org in 2022, I could
+                    hold a rigorous conversation about study design, budget
+                    management, and product prioritization in
+                    the same meeting — and increasingly, about what AI could and
+                    couldn't safely do inside a patient-facing organization.
+                  </p>
+                  <p className="vv-muted">
+                    At Breastcancer.org I came in as Associate Director of
+                    Research — directing the annual patient research program,
+                    building analytics infrastructure in AWS, designing survey
+                    instruments, and producing the quantitative reporting that
+                    feeds board strategy. But the role expanded, and so did the
+                    work. I started leading product discovery for AI-enabled
+                    digital health tools: defining MVPs, establishing governance
+                    guardrails, facilitating alignment between technology,
+                    content, and medical review teams, and building the systems
+                    that would actually make AI safe to deploy in a context
+                    where patients are making treatment decisions. Somewhere in
+                    that process I went from planning AI systems to building
+                    them — production agents, agentic pipelines, parallel
+                    orchestration workflows, MCP integrations. I now do both,
+                    and I think that's the point.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="practice" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                What this looks like in practice
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                The combination shows up in consistent patterns.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <div className="grid gap-4 md:grid-cols-2">
+                {[
+                  {
+                    t: "I start with the constraint, not the capability",
+                    d: "Most AI initiatives fail not because the technology doesn't work, but because no one did the hard work of defining what “working” means in context — including what the system must never do. My research background means I'm wired to start with hypotheses, success criteria, and failure modes before I write a single prompt.",
+                  },
+                  {
+                    t: "I can go from SQL to system design to stakeholder deck",
+                    d: "I'm fluent in SQL and Python, work in AWS, and build production AI agents — but I can also write the board-level framing, facilitate the cross-functional alignment meeting, and define the pilot evaluation criteria. Most people who can do one of those things can't do the others. I can move across all three in the same day.",
+                  },
+                  {
+                    t: "I've shipped AI in a trust-sensitive environment",
+                    d: "Breastcancer.org reaches millions of patients navigating active treatment. That's not a context where you deploy fast and fix it later. My experience designing AI products there — sourcing transparency requirements, hard guardrails against clinical interpretation, escalation pathways, medical review workflows — is directly applicable anywhere AI is touching something that actually matters.",
+                  },
+                  {
+                    t: "I build to learn, not just to demonstrate",
+                    d: "Vision Venture is where I run experiments. The agentic delivery systems, GEO audit intelligence platforms, and content operations pipelines I've built there aren't demos — they're production systems I use and iterate on. It's where the gap between â€œI understand this conceptuallyâ€ and â€œI've debugged this at 11pmâ€ closes.",
+                  },
+                ].map((x) => (
+                  <div key={x.t} className="vv-card rounded-3xl p-6">
+                    <div className="text-sm font-semibold">{x.t}</div>
+                    <p className="vv-muted mt-2 text-sm leading-7">{x.d}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="credentials" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                Credentials &amp; background snapshot
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                Quick highlights.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+                {[
+                  { k: "Education", v: "MS · MBA · B.S. Human Biology" },
+                  { k: "Research", v: "Published across Cancer, JHTR, Journal of Athletic Training" },
+                  { k: "Technical", v: "SQL · Python · AWS · Claude Agent SDK" },
+                  { k: "Domain", v: "8+ years in healthcare research & clinical operations" },
+                  { k: "AI Engineering", v: "25+ production AI agents & workflows deployed" },
+                ].map((t) => (
+                  <div key={t.k} className="vv-card rounded-3xl p-5">
+                    <div className="text-xs font-semibold tracking-wide text-cyan-200/90">
+                      {t.k}
+                    </div>
+                    <div className="vv-muted mt-2 text-sm leading-7">{t.v}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="timeline" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                Background at a glance
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">Career timeline.</p>
+            </div>
+            <div className="md:col-span-8">
+              <div className="vv-card overflow-hidden rounded-3xl">
+                <div className="grid">
+                  {[
+                    ["2014", "B.S. Human Biology — Duquesne University"],
+                    [
+                      "2014—2016",
+                      "Graduate Research & Teaching Assistant — Bloomsburg University",
+                    ],
+                    ["2016", "M.S. Exercise Science — Bloomsburg University"],
+                    [
+                      "2017—2019",
+                      "Program Coordinator, Concussion Research Institute — Bloomsburg University",
+                    ],
+                    [
+                      "2019—2021",
+                      "Research Assistant & Project Manager (Phase III IND) — Main Line Health",
+                    ],
+                    ["2020", "MBA — Bloomsburg University"],
+                    [
+                      "2021—2022",
+                      "Department Business Manager, OB/GYN — Main Line Health",
+                    ],
+                    [
+                      "2022—Present",
+                      "Associate Director of Research + expanded product strategy & AI innovation — Breastcancer.org",
+                    ],
+                  ].map(([year, role], idx) => (
+                    <div
+                      key={`${year}-${role}`}
+                      className={`grid grid-cols-12 gap-4 px-6 py-4 ${idx === 0 ? "" : "border-t border-white/10"
+                        }`}
+                    >
+                      <div className="vv-muted col-span-4 text-sm md:col-span-3">
+                        {year}
+                      </div>
+                      <div className="col-span-8 text-sm font-semibold leading-7 md:col-span-9">
+                        {role}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="next" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                What I'm looking for next
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                Personal direction and fit.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <div className="rounded-3xl bg-white/5 p-1 ring-1 ring-white/10">
+                <div className="vv-card rounded-[22px] p-8 md:p-10">
+                  <div className="space-y-6 text-sm leading-8 md:text-base md:leading-8">
+                    <p className="vv-muted">
+                      I'm actively exploring Director and Senior PM roles in AI
+                      product, digital health, and innovation strategy —
+                      particularly at organizations where the work is genuinely
+                      consequential and where someone who can hold both the
+                      research rigor and the technical implementation
+                      simultaneously is an asset rather than an edge case.
+                    </p>
+                    <p className="vv-muted">
+                      I'm drawn to organizations building AI products where
+                      safety and trust are real constraints, not marketing
+                      language. Healthcare, clinical decision support, regulated
+                      industries, mission-driven orgs. Places where “move fast
+                      and fix it later” isn't an option and where thoughtful
+                      product governance is a competitive advantage.
+                    </p>
+                    <p className="vv-muted">
+                      If you're evaluating whether my background fits a role
+                      you're hiring for, the case studies on this site will tell
+                      you more than a resume will. They show how I think, what I
+                      build, and the tradeoffs I navigate — not just what I've
+                      done.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="cta" className="vv-container py-12 md:py-16">
+          <div className="vv-card rounded-3xl p-8 md:p-10">
+            <div className="grid gap-6 md:grid-cols-12 md:items-center">
+              <div className="md:col-span-7">
+                <div className="text-xl font-semibold tracking-tight">
+                  Want to see the work?
+                </div>
+                <p className="vv-muted mt-3 text-sm leading-7">
+                  The case studies show thinking, structure, governance, and
+                  outcomes — more than a resume ever will.
+                </p>
+              </div>
+              <div className="md:col-span-5 md:flex md:justify-end">
+                <div className="flex w-full flex-col gap-3 sm:flex-row md:w-auto">
+                  <a
+                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90 md:w-auto"
+                    href="/case-studies"
+                  >
+                    View case studies â†’
+                  </a>
+                  <a
+                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10 md:w-auto"
+                    href="https://www.linkedin.com/in/sam-meske-ms-mba/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Connect on LinkedIn
+                  </a>
+                </div>
+              </div>
+            </div>
+            <p className="vv-muted mt-6 text-xs leading-6">
+              <a className="vv-link" href="/resume_sam_meske.pdf" target="_blank" rel="noreferrer">
+                Download resume (PDF)
+              </a>
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <SiteFooter />
+    </div>
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
