@@ -2,6 +2,7 @@
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import type { Metadata } from "next";
 export function generateStaticParams() {
   return CASE_STUDIES.map((c) => ({ slug: c.slug }));
 }
@@ -10,13 +11,21 @@ export async function generateMetadata({
   params,
 }: {
   params: { slug: string } | Promise<{ slug: string }>;
-}) {
+}): Promise<Metadata> {
   const resolvedParams = await Promise.resolve(params);
   const cs = getCaseStudy(resolvedParams.slug);
   if (!cs) return {};
+  const canonical = `/case-studies/${cs.slug}`;
   return {
     title: cs.title,
     description: cs.subtitle,
+    alternates: { canonical },
+    openGraph: {
+      title: cs.title,
+      description: cs.subtitle,
+      url: canonical,
+      type: "article",
+    },
   };
 }
 
@@ -275,8 +284,6 @@ export default async function CaseStudyPage({
     </div>
   );
 }
-
-
 
 
 
