@@ -1,7 +1,6 @@
 ﻿import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { AiOpsAuditForm } from "@/components/home/AiOpsAuditForm";
-import { TrustBadge } from "@/components/ui/trust-badge";
+import { TrustBanner } from "@/components/ui/trust-banner";
 
 export default function Home() {
   return (
@@ -36,7 +35,7 @@ export default function Home() {
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
                     className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-gradient-to-r from-violet-500 to-cyan-400 px-5 text-sm font-semibold text-black hover:opacity-95"
-                    href="#audit"
+                    href="/audit"
                   >
                     Get an AI Ops audit
                   </a>
@@ -56,7 +55,7 @@ export default function Home() {
                     <div className="h-24 w-24 overflow-hidden rounded-2xl bg-white/5 ring-1 ring-white/10">
 
                       <img
-                        alt="Headshot placeholder"
+                        alt="Sam Meske Headshot"
                         src="https://ik.imagekit.io/i6kon7cps/image.png?updatedAt=1778689112603"
                         className="h-full w-full object-cover"
                       />
@@ -103,22 +102,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="border-y vv-line bg-black/10 dark:bg-black/20">
-          <div className="vv-container py-3 md:py-10">
-            <div className="grid grid-cols-2 gap-x-6 gap-y-2 text-xs sm:flex sm:flex-wrap sm:items-center sm:justify-center sm:gap-x-3 sm:gap-y-2 sm:text-sm">
-              {[
-                "25+ production AI agents",
-                "8+ years in AI & research",
-                "MS, MBA",
-                "Published Researcher",
-                "Next.js + React",
-                "SQL + Python + AWS",
-              ].map((item, idx) => (
-                <TrustBadge key={item} text={item} />
-              ))}
-            </div>
-          </div>
-        </section>
+        <TrustBanner />
 
         <section className="vv-container py-8 md:py-10">
           <div className="grid gap-4 md:grid-cols-12">
@@ -209,31 +193,6 @@ export default function Home() {
                     View expertise
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="audit" className="vv-container py-8 md:py-10">
-          <div className="vv-card rounded-3xl p-8 md:p-10">
-            <div className="grid gap-10 md:grid-cols-12">
-              <div className="md:col-span-5">
-                <h2 className="text-2xl font-semibold tracking-tight">
-                  Get an AI Ops audit
-                </h2>
-                <p className="vv-muted mt-3 text-sm leading-7">
-                  A short intake to understand your workflows and identify the
-                  highest ROI automation opportunities.
-                </p>
-                <ul className="vv-muted mt-5 list-disc space-y-1 pl-5 text-sm">
-                  <li>Prioritized automation map</li>
-                  <li>ROI estimates + quick wins</li>
-                  <li>30/60/90-day implementation plan</li>
-                </ul>
-              </div>
-
-              <div className="md:col-span-7">
-                <AiOpsAuditForm />
               </div>
             </div>
           </div>

@@ -43,6 +43,23 @@
   background: rgba(124, 92, 255, 0.35);
 }
 
+/* View transitions (subtle + fast) */
+::view-transition-group(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+  animation-duration: 0.25s;
+  animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes trust-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-33.333%);
+  }
+}
+
 .vv-container {
   @apply mx-auto w-full max-w-6xl px-6;
 }

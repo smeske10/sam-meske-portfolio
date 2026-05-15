@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     images: [
       {
-        url: "https://ik.imagekit.io/i6kon7cps/image%20(1).png",
+        url: "https://ik.imagekit.io/i6kon7cps/image.png?updatedAt=1778689112603",
         width: 1200,
         height: 1200,
         alt: "Sam Meske headshot",
