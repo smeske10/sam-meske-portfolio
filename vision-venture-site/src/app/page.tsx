@@ -61,7 +61,7 @@ export default function Home() {
     {
       title: "Agent-Powered Agency Delivery System",
       description:
-        "End-to-end agentic ops: lead â†’ audit â†’ offer â†’ delivery â†’ retention.",
+        "End-to-end agentic ops: lead → audit → offer → delivery → retention.",
       icon: <Sparkles className="h-4 w-4 text-violet-500" />,
       status: "Vision Venture",
       tags: ["Agents", "Orchestration", "Ops"],
@@ -75,7 +75,7 @@ export default function Home() {
       icon: <Globe className="h-4 w-4 text-sky-500" />,
       status: "Vision Venture",
       tags: ["GEO", "Scoring", "Reporting"],
-      cta: "View â†’",
+      cta: "View →",
       href: "/case-studies/geo-audit-platform",
     },
   ];

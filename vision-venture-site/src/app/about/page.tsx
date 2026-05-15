@@ -148,7 +148,7 @@ export default function AboutPage() {
                   },
                   {
                     t: "I build to learn, not just to demonstrate",
-                    d: "Vision Venture is where I run experiments. The agentic delivery systems, GEO audit intelligence platforms, and content operations pipelines I've built there aren't demos — they're production systems I use and iterate on. It's where the gap between â€œI understand this conceptuallyâ€ and â€œI've debugged this at 11pmâ€ closes.",
+                    d: "Vision Venture is where I run experiments. The agentic delivery systems, GEO audit intelligence platforms, and content operations pipelines I've built there aren't demos — they're production systems I use and iterate on. It's where the gap between \"I understand this conceptually\" and \"I've debugged this at 11pm\" closes.",
                   },
                 ].map((x) => (
                   <div key={x.t} className="vv-card rounded-3xl p-6">
@@ -224,6 +224,10 @@ export default function AboutPage() {
                       "Department Business Manager, OB/GYN — Main Line Health",
                     ],
                     [
+                      "2022",
+                      "Full Stack Coding Bootcamp — University of Pennsylvania",
+                    ],
+                    [
                       "2022—Present",
                       "Associate Director of Research + expanded product strategy & AI innovation — Breastcancer.org",
                     ],
@@ -280,7 +284,7 @@ export default function AboutPage() {
                     <p className="vv-muted">
                       If you're evaluating whether my background fits a role
                       you're hiring for, the case studies on this site will tell
-                      you more than a resume will. They show how I think, what I
+                      you more than a resume. They show how I think, what I
                       build, and the tradeoffs I navigate — not just what I've
                       done.
                     </p>
@@ -309,7 +313,7 @@ export default function AboutPage() {
                     className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90 md:w-auto"
                     href="/case-studies"
                   >
-                    View case studies â†’
+                    View case studies 🡢
                   </a>
                   <a
                     className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10 md:w-auto"
