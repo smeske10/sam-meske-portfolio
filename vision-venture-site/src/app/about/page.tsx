@@ -1,6 +1,7 @@
 ﻿import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
+import { BuiltForOpsProfileCard } from "@/components/home/built-for-ops-profile-card";
+import { PracticeAccordion } from "@/components/about/PracticeAccordion";
 export const metadata = {
   title: "About — Sam Meske",
   description:
@@ -27,7 +28,7 @@ function SectionTitle({
           {eyebrow}
         </p>
       ) : null}
-      <h1 className="text-3xl font-semibold tracking-tight md:text-5xl">
+      <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
         {title}
       </h1>
       {subtitle ? (
@@ -51,16 +52,21 @@ export default function AboutPage() {
             <div className="absolute right-[-240px] top-[180px] h-[560px] w-[560px] rounded-full bg-[radial-gradient(circle_at_center,rgba(34,211,238,0.20),transparent_60%)] blur-2xl" />
           </div>
 
-          <div className="vv-container relative py-16 md:py-24">
-            <SectionTitle
-              eyebrow="AI Product Strategy · Healthcare Research · Systems Engineering"
-              title="I sit at the intersection of research rigor, technical depth, and product strategy — and that combination is rare."
-              subtitle="Most AI product leaders come from design, engineering, or business. My path ran through clinical research, population health analytics, and hands-on AI systems engineering. That background shapes everything about how I approach AI products: methodically, with an eye toward governance, and with the operator instincts to know what actually ships."
-            />
+          <div className="vv-container relative py-16 md:py-20">
+            <div className="grid items-start gap-10 md:grid-cols-12">
+              <div className="md:col-span-7">
+                <SectionTitle
+                  eyebrow="AI Product Strategy · Healthcare Research · Systems Engineering"
+                  title="I sit at the intersection of research rigor, technical depth, and product strategy — and that combination is rare."
+                  subtitle="Most AI product leaders come from design, engineering, or business. My path ran through clinical research, population health analytics, and hands-on AI systems engineering. That background shapes everything about how I approach AI products: methodically, with an eye toward governance, and with the operator instincts to know what actually ships."
+                />
+              </div>
+              <div className="md:col-span-5">
+                <BuiltForOpsProfileCard />
+              </div>
+            </div>
           </div>
         </section>
-
-        <BuiltForOpsSection />
 
         <section id="narrative" className="vv-container py-12 md:py-16">
           <div className="grid gap-10 md:grid-cols-12">
@@ -145,31 +151,30 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:col-span-8">
-              <div className="grid gap-4 md:grid-cols-2">
-                {[
+              <PracticeAccordion
+                items={[
                   {
-                    t: "I start with the constraint, not the capability",
-                    d: "Most AI initiatives fail not because the technology doesn't work, but because no one did the hard work of defining what “working” means in context — including what the system must never do. My research background means I'm wired to start with hypotheses, success criteria, and failure modes before I write a single prompt.",
+                    title: "I start with the constraint, not the capability",
+                    content:
+                      "Most AI initiatives fail not because the technology doesn't work, but because no one did the hard work of defining what “working” means in context — including what the system must never do. My research background means I'm wired to start with hypotheses, success criteria, and failure modes before I write a single prompt.",
                   },
                   {
-                    t: "I can go from SQL to system design to stakeholder deck",
-                    d: "I'm fluent in SQL and Python, work in AWS, and build production AI agents — but I can also write the board-level framing, facilitate the cross-functional alignment meeting, and define the pilot evaluation criteria. Most people who can do one of those things can't do the others. I can move across all three in the same day.",
+                    title: "I can go from SQL to system design to stakeholder deck",
+                    content:
+                      "I'm fluent in SQL and Python, work in AWS, and build production AI agents — but I can also write the board-level framing, facilitate the cross-functional alignment meeting, and define the pilot evaluation criteria. Most people who can do one of those things can't do the others. I can move across all three in the same day.",
                   },
                   {
-                    t: "I've shipped AI in a trust-sensitive environment",
-                    d: "Breastcancer.org reaches millions of patients navigating active treatment. That's not a context where you deploy fast and fix it later. My experience designing AI products there — sourcing transparency requirements, hard guardrails against clinical interpretation, escalation pathways, medical review workflows — is directly applicable anywhere AI is touching something that actually matters.",
+                    title: "I've shipped AI in a trust-sensitive environment",
+                    content:
+                      "Breastcancer.org reaches millions of patients navigating active treatment. That's not a context where you deploy fast and fix it later. My experience designing AI products there — sourcing transparency requirements, hard guardrails against clinical interpretation, escalation pathways, medical review workflows — is directly applicable anywhere AI is touching something that actually matters.",
                   },
                   {
-                    t: "I build to learn, not just to demonstrate",
-                    d: "Vision Venture is where I run experiments. The agentic delivery systems, GEO audit intelligence platforms, and content operations pipelines I've built there aren't demos — they're production systems I use and iterate on. It's where the gap between \"I understand this conceptually\" and \"I've debugged this at 11pm\" closes.",
+                    title: "I build to learn, not just to demonstrate",
+                    content:
+                      "Vision Venture is where I run experiments. The agentic delivery systems, GEO audit intelligence platforms, and content operations pipelines I've built there aren't demos — they're production systems I use and iterate on. It's where the gap between “I understand this conceptually” and “I've debugged this at 11pm” closes.",
                   },
-                ].map((x) => (
-                  <div key={x.t} className="vv-card rounded-3xl p-6">
-                    <div className="text-sm font-semibold">{x.t}</div>
-                    <p className="vv-muted mt-2 text-sm leading-7">{x.d}</p>
-                  </div>
-                ))}
-              </div>
+                ]}
+              />
             </div>
           </div>
         </section>
@@ -352,6 +357,7 @@ export default function AboutPage() {
     </div>
   );
 }
+
 
 
 
