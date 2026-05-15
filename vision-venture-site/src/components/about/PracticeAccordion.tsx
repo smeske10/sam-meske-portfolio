@@ -9,7 +9,7 @@ export interface PracticeAccordionItem {
 
 export function PracticeAccordion({ items }: { items: PracticeAccordionItem[] }) {
   const baseId = useId();
-  const [openIndex, setOpenIndex] = useState<number>(0);
+  const [openIndex, setOpenIndex] = useState<number>(-1);
 
   return (
     <div className="vv-card rounded-3xl p-4 md:p-6">
@@ -54,4 +54,3 @@ export function PracticeAccordion({ items }: { items: PracticeAccordionItem[] })
     </div>
   );
 }
-

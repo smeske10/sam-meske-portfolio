@@ -79,11 +79,14 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:col-span-8">
-              <details className="vv-card rounded-3xl p-8 md:p-10">
+              <details className="group vv-card rounded-3xl p-8 md:p-10">
                 <summary className="[&::-webkit-details-marker]:hidden cursor-pointer list-none">
                   <div className="flex items-center justify-between gap-4">
                     <div className="text-sm font-semibold">Read the narrative</div>
-                    <div className="vv-muted text-xs">Expand</div>
+                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-sm font-semibold ring-1 ring-white/10">
+                      <span className="group-open:hidden">+</span>
+                      <span className="hidden group-open:inline">−</span>
+                    </div>
                   </div>
                   <p className="vv-muted mt-3 text-sm leading-7">
                     Research foundation → operations &amp; analytics → AI product strategy &amp; systems engineering.
@@ -175,37 +178,6 @@ export default function AboutPage() {
                   },
                 ]}
               />
-            </div>
-          </div>
-        </section>
-
-        <section id="credentials" className="vv-container py-12 md:py-16">
-          <div className="flex flex-col gap-6">
-            <div className="max-w-3xl">
-              <h2 className="text-2xl font-semibold tracking-tight">
-                Credentials &amp; background snapshot
-              </h2>
-              <p className="vv-muted mt-3 text-sm leading-7">
-                Quick highlights.
-              </p>
-            </div>
-            <div className="-mx-6 px-6 md:mx-0 md:px-0">
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-                {[
-                  { k: "Education", v: "MS · MBA · B.S. Human Biology" },
-                  { k: "Research", v: "Published across Cancer, JHTR, Journal of Athletic Training" },
-                  { k: "Technical", v: "SQL · Python · AWS · Claude Agent SDK" },
-                  { k: "Domain", v: "8+ years in healthcare research & clinical operations" },
-                  { k: "AI Engineering", v: "25+ production AI agents & workflows deployed" },
-                ].map((t) => (
-                  <div key={t.k} className="vv-card rounded-3xl p-5">
-                    <div className="text-xs font-semibold tracking-wide text-cyan-200/90">
-                      {t.k}
-                    </div>
-                    <div className="vv-muted mt-2 text-sm leading-7">{t.v}</div>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
         </section>
@@ -309,6 +281,242 @@ export default function AboutPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="publications" className="vv-container py-12 md:py-16">
+          <div className="grid gap-10 md:grid-cols-12">
+            <div className="md:col-span-4">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                Publications
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                Recent/current research plus selected publications, works in
+                preparation, and conference abstracts.
+              </p>
+            </div>
+            <div className="md:col-span-8">
+              <details className="group vv-card rounded-3xl p-8 md:p-10">
+                <summary className="[&::-webkit-details-marker]:hidden cursor-pointer list-none">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="text-sm font-semibold">
+                      View publications list
+                    </div>
+                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-sm font-semibold ring-1 ring-white/10">
+                      <span className="group-open:hidden">+</span>
+                      <span className="hidden group-open:inline">−</span>
+                    </div>
+                  </div>
+                  <p className="vv-muted mt-3 text-sm leading-7">
+                    ResearchGate profile and a curated list of accepted,
+                    in-prep, and abstract publications.
+                  </p>
+                </summary>
+
+                <div className="mt-6 space-y-8 text-sm leading-8 md:text-base md:leading-8">
+                  <div>
+                    <div className="text-sm font-semibold tracking-tight">
+                      Recent / current research
+                    </div>
+                    <p className="vv-muted mt-2 text-sm leading-7">
+                      <a
+                        className="vv-link"
+                        href="https://www.researchgate.net/profile/Sam-Meske"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        ResearchGate: Sam Meske
+                      </a>
+                    </p>
+                  </div>
+
+                  <div>
+                    <div className="text-sm font-semibold tracking-tight">
+                      Publications (accepted)
+                    </div>
+                    <ul className="vv-muted mt-3 list-disc space-y-2 pl-5 text-sm leading-7">
+                      <li>
+                        Weiss, M, Hibbs, J, Buckley, M…Meske, S et al. (2021) A
+                        Coala-T survey of breast cancer patients use of cannabis
+                        before, during and after treatment. <em>Cancer</em>.
+                        CNCR-21-0925.R1
+                      </li>
+                      <li>
+                        Beaupre, J, Meske, S, &amp; Buckley, M. (2021) Athletic
+                        Training and Population Health Science.{" "}
+                        <em>Journal of Athletic Training</em>. Online Ahead of
+                        Print.
+                      </li>
+                      <li>
+                        Beaupre, J, Meske, S, &amp; Buckley, M. (2021) Athletic
+                        Trainer-reported prevalence of mental health, substance
+                        use, and barriers to health in secondary schools.{" "}
+                        <em>Journal of Athletic Training</em>. Online Ahead of
+                        Print.
+                      </li>
+                      <li>
+                        Meske, S, Hazzard, J, Ni, M, Hanson, T, Van Horn, L,
+                        &amp; Smith, J. (2018) The Prevalence of Traumatic Brain
+                        Injury and On-Campus Service Utilization Among
+                        Undergraduate Students.{" "}
+                        <em>Journal of Head Trauma Rehabilitation</em>. Online
+                        Ahead of Print.
+                      </li>
+                      <li>
+                        Mookerjee, S, McMahon, M, &amp; Meske, S. (2017)
+                        Influence of joint angle and biceps brachii isometric
+                        contraction intensity on electromyographic and
+                        mechanomyographic responses.{" "}
+                        <em>
+                          Advances in Skeletal Muscle Function Assessment
+                        </em>
+                        . 1(2), 21–27.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div className="text-sm font-semibold tracking-tight">
+                      Publications (in preparation)
+                    </div>
+                    <ul className="vv-muted mt-3 list-disc space-y-2 pl-5 text-sm leading-7">
+                      <li>
+                        Gobern, J, Hartwell, L, Meske S, &amp; Carlson, E. (2020)
+                        Management of Amniotic Fluid Embolism in a Community
+                        Healthcare System: A Case Series.{" "}
+                        <em>American Journal of Obstetrics &amp; Gynecology</em>.
+                      </li>
+                      <li>
+                        Kennard, K, Ciocca, R, Sabol, J, Carp, N, Meske, S.
+                        (2020) Use of PECS II Block in Partial Mastectomy for
+                        Improving Postoperative Pain Control and Mitigating
+                        Narcotic Use — a Randomized Control Trial.{" "}
+                        <em>American Journal of Surgery</em>.
+                      </li>
+                      <li>
+                        Hazzard, J, Ni, M, Meske, S, Caccese, Eckner, JT,
+                        &amp; Buckley, T. (2019) The effects of sports-related
+                        concussion on clinical reaction-time in student-athletes.
+                      </li>
+                      <li>
+                        Buckley, T, Caccese, J, Hazzard, J, Ni, M, Meske, S,
+                        &amp; Eckner, JT. (2019) Clinical reaction-time
+                        correlation to risk of head injury in student-athletes.
+                      </li>
+                      <li>
+                        Meske, S &amp; Mookerjee, S. (2019) Comparison of EMG
+                        responses across handle types during seated row exercise.{" "}
+                        <em>Journal of Strength and Conditioning Research</em>.
+                      </li>
+                      <li>
+                        Mookerjee, S, McMahon, M, &amp; Meske, S. (2018) EMG
+                        amplitude-to-torque ratios in males and females during
+                        isokinetic exercise.{" "}
+                        <em>European Journal of Sports Science</em>.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div className="text-sm font-semibold tracking-tight">
+                      Abstracts
+                    </div>
+                    <ul className="vv-muted mt-3 list-disc space-y-2 pl-5 text-sm leading-7">
+                      <li>
+                        Kennard, K, Buckley, M, Meske, S, Larson, S, et al. Use
+                        of PECS II Block in Partial Mastectomy for Improving
+                        Postoperative Pain Control and Mitigating Narcotic Use:
+                        Initial Results from a Randomized Control Trial. Poster
+                        presented to the ASBrS virtual conference, June 2020.
+                      </li>
+                      <li>
+                        Sabato, E, Gobern, J, Meske, S, &amp; Buckley, M. (2020).
+                        Racial Disparities in Postpartum Hemorrhage in a
+                        Community Hospital: A Retrospective Cohort Analysis.{" "}
+                        <em>ACOG National Conference</em>.
+                      </li>
+                      <li>
+                        Mezes, C, Meske S, &amp; Gobern, J. (2019). Enhanced
+                        Laparoscopic Identification of Peritoneal Endometriosis
+                        with Indocyanine Green Contrast: An Educational Video.{" "}
+                        <em>AAGL International Conference</em>.
+                      </li>
+                      <li>
+                        Mookerjee, S, Meske, S, Beyer, KS, &amp; Drury, D. (2019).
+                        Gender Comparisons of Muscle Activation Patterns Across
+                        Handle Types During Seated Row Exercise:{" "}
+                        <em>Medicine &amp; Science in Sports &amp; Exercise</em>.
+                        51(6):143.
+                      </li>
+                      <li>
+                        Meske, S, Hazzard, J, &amp; Ni, M. (2018). Altered state
+                        of consciousness in mild traumatic brain injury in
+                        relation to utilization of services. <em>Neurology</em>.
+                        91:2.
+                      </li>
+                      <li>
+                        Meske, S, Hazzard Jr., J, Tolan, C, Van Horn, L, Hanson,
+                        T, &amp; Smith, J. (2017). Trajectory of recovery from
+                        mTBI in an adolescent ice hockey player.{" "}
+                        <em>
+                          IBIA/IPBIS 2nd International Conference on Pediatric
+                          Acquired Brain Injury
+                        </em>
+                        .
+                      </li>
+                      <li>
+                        Meske, S, Hanson, T, Hazzard Jr., J, Van Horn, L,
+                        &amp; Smith, J. (2017). Prevalence of traumatic brain
+                        injury and utilization of services in an undergraduate
+                        population.{" "}
+                        <em>
+                          American Academy of Neurology 4th Annual Sports
+                          Concussion Conference
+                        </em>
+                        .
+                      </li>
+                      <li>
+                        Van Horn, L, Hazzard Jr., J, Smith, P, Meske, S, Hanson,
+                        T, &amp; Smith, J. (2017). Residual effects of concussion
+                        utilizing a dual-task analysis.{" "}
+                        <em>
+                          American Academy of Neurology 4th Annual Sports
+                          Concussion Conference
+                        </em>
+                        .
+                      </li>
+                      <li>
+                        Van Horn, L, Hazzard Jr., J, Meske, S, Hanson, T,
+                        &amp; Smith, J. (2017). Recovery assessment from severe
+                        TBI using multiple technologies.{" "}
+                        <em>
+                          2nd International Conference Pediatric Acquired Brain
+                          Injury
+                        </em>
+                        .
+                      </li>
+                      <li>
+                        Mookerjee, S, Meske, S, &amp; Nocera, V. (2016).
+                        Comparison of differences in O2 pulse across upper body
+                        resistance exercise.{" "}
+                        <em>Medicine &amp; Science in Sports &amp; Exercise</em>,
+                        48(5), S278.
+                      </li>
+                      <li>
+                        Nocera, V, Meske, S, &amp; Mookerjee, S. (2015). Gender
+                        differences in O2 pulse during single set vs.
+                        multiple-set resistance exercise.{" "}
+                        <em>
+                          Mid-Atlantic Regional Chapter of the American College
+                          of Sports Medicine 38th Annual Scientific Meeting
+                        </em>
+                        .
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </details>
             </div>
           </div>
         </section>
