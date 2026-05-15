@@ -48,13 +48,13 @@ export default function RootLayout({
     "@type": "Person",
     name: "Sam Meske",
     url: siteUrl,
-    jobTitle:
-      "AI Product Strategist, Innovation Leader & Consultant",
+    jobTitle: "AI Product Strategist",
     worksFor: {
       "@type": "Organization",
       name: "Breastcancer.org",
     },
     sameAs: [
+      "https://www.linkedin.com/in/sammeske/",
       "https://www.linkedin.com/in/sam-meske-ms-mba/",
       "https://github.com/smeske10",
     ],
