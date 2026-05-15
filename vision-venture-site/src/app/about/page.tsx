@@ -57,7 +57,7 @@ export default function AboutPage() {
               <div className="md:col-span-7">
                 <SectionTitle
                   eyebrow="AI Product Strategy · Healthcare Research · Systems Engineering"
-                  title="I sit at the intersection of research rigor, technical depth, and product strategy — and that combination is rare."
+                  title="I sit at the intersection of research rigor, technical depth, and product strategy — that combination is rare."
                   subtitle="Most AI product leaders come from design, engineering, or business. My path ran through clinical research, population health analytics, and hands-on AI systems engineering. That background shapes everything about how I approach AI products: methodically, with an eye toward governance, and with the operator instincts to know what actually ships."
                 />
               </div>
