@@ -18,7 +18,7 @@ const NAV_LINKS: Array<{ label: string; href: string }> = [
   { label: "About", href: "/about" },
   { label: "Positioning", href: "/#positioning" },
   { label: "Case studies", href: "/case-studies" },
-  { label: "Expertise", href: "/#expertise" },
+  { label: "Expertise", href: "/expertise" },
 ];
 
 export function MobileNav() {

@@ -16,6 +16,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: `${baseUrl}/expertise`,
+      lastModified: new Date(),
+    },
+    {
       url: `${baseUrl}/case-studies/ai-innovation-incubator`,
       lastModified: new Date(),
     },
