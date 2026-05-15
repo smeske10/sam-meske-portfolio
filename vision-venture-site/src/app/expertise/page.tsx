@@ -195,7 +195,7 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-violet-700 dark:text-violet-200/90",
                       pillClass:
-                        "bg-violet-700 text-white ring-violet-900/15 dark:bg-violet-500/10 dark:text-violet-100 dark:ring-violet-300/20",
+                        "!bg-violet-700 !text-white ring-violet-900/15 dark:!bg-violet-700 dark:!text-white dark:ring-violet-300/20",
                     },
                     {
                       group: "Agentic Infra",
@@ -207,14 +207,14 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-emerald-700 dark:text-emerald-200/90",
                       pillClass:
-                        "bg-emerald-700 text-white ring-emerald-900/15 dark:bg-emerald-500/10 dark:text-emerald-100 dark:ring-emerald-300/20",
+                        "!bg-emerald-700 !text-white ring-emerald-900/15 dark:!bg-emerald-700 dark:!text-white dark:ring-emerald-300/20",
                     },
                     {
                       group: "Automation",
                       tags: ["Make", "Zapier", "n8n"],
                       labelClass: "text-amber-700 dark:text-amber-200/90",
                       pillClass:
-                        "bg-amber-600 text-white ring-amber-900/15 dark:bg-amber-500/10 dark:text-amber-100 dark:ring-amber-300/20",
+                        "!bg-amber-600 !text-white ring-amber-900/15 dark:!bg-amber-600 dark:!text-white dark:ring-amber-300/20",
                     },
                     {
                       group: "Data & Engineering",
@@ -228,7 +228,7 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-sky-700 dark:text-sky-200/90",
                       pillClass:
-                        "bg-sky-700 text-white ring-sky-900/15 dark:bg-sky-500/10 dark:text-sky-100 dark:ring-sky-300/20",
+                        "!bg-sky-700 !text-white ring-sky-900/15 dark:!bg-sky-700 dark:!text-white dark:ring-sky-300/20",
                     },
                     {
                       group: "Analytics & Research",
@@ -241,14 +241,14 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-lime-700 dark:text-lime-200/90",
                       pillClass:
-                        "bg-lime-700 text-white ring-lime-900/15 dark:bg-lime-500/10 dark:text-lime-100 dark:ring-lime-300/20",
+                        "!bg-lime-700 !text-white ring-lime-900/15 dark:!bg-lime-700 dark:!text-white dark:ring-lime-300/20",
                     },
                     {
                       group: "Frontend & Design",
                       tags: ["Next.js", "React", "Figma", "Canva"],
                       labelClass: "text-fuchsia-700 dark:text-fuchsia-200/90",
                       pillClass:
-                        "bg-fuchsia-700 text-white ring-fuchsia-900/15 dark:bg-fuchsia-500/10 dark:text-fuchsia-100 dark:ring-fuchsia-300/20",
+                        "!bg-fuchsia-700 !text-white ring-fuchsia-900/15 dark:!bg-fuchsia-700 dark:!text-white dark:ring-fuchsia-300/20",
                     },
                     {
                       group: "CRM & Marketing",
@@ -260,7 +260,7 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-orange-700 dark:text-orange-200/90",
                       pillClass:
-                        "bg-orange-700 text-white ring-orange-900/15 dark:bg-orange-500/10 dark:text-orange-100 dark:ring-orange-300/20",
+                        "!bg-orange-700 !text-white ring-orange-900/15 dark:!bg-orange-700 dark:!text-white dark:ring-orange-300/20",
                     },
                     {
                       group: "Infra & Delivery",
@@ -274,7 +274,7 @@ export default function ExpertisePage() {
                       ],
                       labelClass: "text-slate-700 dark:text-zinc-200/80",
                       pillClass:
-                        "bg-slate-900 text-white ring-slate-900/15 dark:bg-white/5 dark:text-zinc-100 dark:ring-white/10",
+                        "!bg-slate-900 !text-white ring-slate-900/15 dark:!bg-slate-900 dark:!text-white dark:ring-white/10",
                     },
                   ].map((cluster) => (
                     <div key={cluster.group}>
