@@ -24,9 +24,6 @@ export function SiteHeader() {
           <Link className="vv-link" href="/about">
             About
           </Link>
-          <Link className="vv-link" href="/expertise#positioning">
-            Positioning
-          </Link>
           <Link className="vv-link" href="/case-studies">
             Case studies
           </Link>
