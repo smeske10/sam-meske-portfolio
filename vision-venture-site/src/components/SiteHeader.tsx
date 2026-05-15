@@ -24,7 +24,7 @@ export function SiteHeader() {
           <Link className="vv-link" href="/about">
             About
           </Link>
-          <Link className="vv-link" href="/#positioning">
+          <Link className="vv-link" href="/expertise#positioning">
             Positioning
           </Link>
           <Link className="vv-link" href="/case-studies">

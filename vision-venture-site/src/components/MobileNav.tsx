@@ -16,7 +16,7 @@ import {
 const NAV_LINKS: Array<{ label: string; href: string }> = [
   { label: "Home", href: "/#top" },
   { label: "About", href: "/about" },
-  { label: "Positioning", href: "/#positioning" },
+  { label: "Positioning", href: "/expertise#positioning" },
   { label: "Case studies", href: "/case-studies" },
   { label: "Expertise", href: "/expertise" },
 ];

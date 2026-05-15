@@ -47,6 +47,60 @@ export default function ExpertisePage() {
           </div>
         </section>
 
+        <section id="positioning" className="vv-container pb-12 md:pb-16">
+          <div className="flex flex-col gap-6">
+            <div className="max-w-3xl">
+              <h2 className="text-2xl font-semibold tracking-tight">
+                High-level positioning
+              </h2>
+              <p className="vv-muted mt-3 text-sm leading-7">
+                I'm not a pure UX designer, pure engineer, or pure researcher —
+                I'm a systems-oriented AI product strategist.
+              </p>
+            </div>
+            <div className="-mx-6 px-6 md:mx-0 md:px-0">
+              <div className="grid gap-4 md:grid-cols-6">
+                {[
+                  {
+                    t: "AI Product Strategy",
+                    d: "Opportunity framing, prioritization, and decision systems.",
+                  },
+                  {
+                    t: "AI Systems & Workflow Design",
+                    d: "Agentic workflows, governance models, and lifecycle design.",
+                  },
+                  {
+                    t: "Product Discovery & MVP Development",
+                    d: "Discovery, MVP structure, validation criteria, and pilots.",
+                  },
+                  {
+                    t: "Automation & Analytics",
+                    d: "Operational automation paired with measurement and iteration.",
+                  },
+                  {
+                    t: "Healthcare Innovation",
+                    d: "Trust-first AI product development in regulated contexts.",
+                  },
+                ].map((x, idx) => (
+                  <TiltCard
+                    key={x.t}
+                    className={`vv-card w-full rounded-3xl p-6 ${
+                      idx >= 3 ? "md:col-span-3" : "md:col-span-2"
+                    }`}
+                    tiltLimit={10}
+                    scale={1}
+                    effect="gravitate"
+                    spotlight
+                  >
+                    <div className="text-sm font-semibold">{x.t}</div>
+                    <p className="vv-muted mt-2 text-sm leading-7">{x.d}</p>
+                  </TiltCard>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="vv-container pb-12 md:pb-16">
           <div className="grid gap-10 md:grid-cols-12">
             <div className="md:col-span-5">
@@ -248,4 +302,3 @@ export default function ExpertisePage() {
     </div>
   );
 }
-

@@ -1,6 +1,5 @@
 ﻿import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { TiltCard } from "@/components/ui/tilt-card";
 import { BuiltForOpsProfileCard } from "@/components/home/built-for-ops-profile-card";
 import { AiOpsAuditForm } from "@/components/home/AiOpsAuditForm";
 import { TrustBadge } from "@/components/ui/trust-badge";
@@ -122,54 +121,36 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="positioning" className="vv-container py-12 md:py-16">
-          <div className="flex flex-col gap-6">
-            <div className="max-w-3xl">
-              <h2 className="text-2xl font-semibold tracking-tight">
-                High-level positioning
-              </h2>
+        <section className="vv-container py-12 md:py-16">
+          <div className="grid gap-4 md:grid-cols-12">
+            <div className="md:col-span-5">
+              <h2 className="text-2xl font-semibold tracking-tight">Resume</h2>
               <p className="vv-muted mt-3 text-sm leading-7">
-                I'm not a pure UX designer, pure engineer, or pure researcher —
-                I'm a systems-oriented AI product strategist.
+                Prefer the one-page view? Download my resume for a quick scan of
+                background, roles, and impact.
               </p>
             </div>
-            <div className="-mx-6 px-6 md:mx-0 md:px-0">
-              <div className="grid gap-4 md:grid-cols-6">
-                {[
-                  {
-                    t: "AI Product Strategy",
-                    d: "Opportunity framing, prioritization, and decision systems.",
-                  },
-                  {
-                    t: "AI Systems & Workflow Design",
-                    d: "Agentic workflows, governance models, and lifecycle design.",
-                  },
-                  {
-                    t: "Product Discovery & MVP Development",
-                    d: "Discovery, MVP structure, validation criteria, and pilots.",
-                  },
-                  {
-                    t: "Automation & Analytics",
-                    d: "Operational automation paired with measurement and iteration.",
-                  },
-                  {
-                    t: "Healthcare Innovation",
-                    d: "Trust-first AI product development in regulated contexts.",
-                  },
-                ].map((x, idx) => (
-                  <TiltCard
-                    key={x.t}
-                    className={`vv-card w-full rounded-3xl p-6 ${idx >= 3 ? "md:col-span-3" : "md:col-span-2"
-                      }`}
-                    tiltLimit={10}
-                    scale={1}
-                    effect="gravitate"
-                    spotlight
+            <div className="md:col-span-7">
+              <div className="vv-card rounded-3xl p-6 md:p-8">
+                <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <div className="text-sm font-semibold">
+                      Download resume (PDF)
+                    </div>
+                    <p className="vv-muted mt-2 text-sm leading-7">
+                      Includes healthcare research leadership, AI product
+                      strategy, and systems engineering.
+                    </p>
+                  </div>
+                  <a
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                    href="/resume_sam_meske.pdf"
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <div className="text-sm font-semibold">{x.t}</div>
-                    <p className="vv-muted mt-2 text-sm leading-7">{x.d}</p>
-                  </TiltCard>
-                ))}
+                    Download
+                  </a>
+                </div>
               </div>
             </div>
           </div>
