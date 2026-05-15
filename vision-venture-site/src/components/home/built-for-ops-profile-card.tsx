@@ -37,7 +37,7 @@ export function BuiltForOpsProfileCard() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
                 href="/case-studies"
               >
                 View case studies

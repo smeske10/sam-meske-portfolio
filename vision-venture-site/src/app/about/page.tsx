@@ -23,7 +23,7 @@ function SectionTitle({
   return (
     <div>
       {eyebrow ? (
-        <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs ring-1 ring-white/10">
+        <p className="mb-3 inline-flex items-center gap-2 rounded-full bg-[color:var(--tint-1)] px-3 py-1 text-xs ring-1 ring-[color:var(--line)]">
           <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
           {eyebrow}
         </p>
@@ -565,7 +565,6 @@ export default function AboutPage() {
     </div>
   );
 }
-
 
 
 

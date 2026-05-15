@@ -17,7 +17,7 @@ export default function Home() {
           <div className="vv-container relative py-16 md:py-24">
             <div className="grid items-center gap-10 md:grid-cols-12">
               <div className="md:col-span-7">
-                <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-xs ring-1 ring-white/10">
+                <p className="mb-4 inline-flex items-center gap-2 rounded-full bg-[color:var(--tint-1)] px-3 py-1 text-xs ring-1 ring-[color:var(--line)]">
                   <span className="h-1.5 w-1.5 rounded-full bg-cyan-300" />
                   Systems-oriented AI product strategist
                 </p>
@@ -40,7 +40,7 @@ export default function Home() {
                     Get an AI Ops audit
                   </a>
                   <a
-                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-5 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
                     href="/case-studies"
                   >
                     See what I build
@@ -122,7 +122,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
                     href="/resume_sam_meske.pdf"
                     target="_blank"
                     rel="noreferrer"
@@ -156,7 +156,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
                     href="/case-studies"
                   >
                     View case studies
@@ -187,7 +187,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
                     href="/expertise"
                   >
                     View expertise

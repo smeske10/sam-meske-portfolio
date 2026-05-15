@@ -39,7 +39,7 @@ export async function generateMetadata({
 
 function Tag({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center rounded-full bg-white/5 px-3 py-1 text-xs ring-1 ring-white/10">
+    <span className="inline-flex items-center rounded-full bg-[color:var(--tint-1)] px-3 py-1 text-xs ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
       {children}
     </span>
   );
