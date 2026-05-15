@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
 import { TiltCard } from "@/components/ui/tilt-card";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://sammeske.com";
@@ -300,7 +299,6 @@ export default function ExpertisePage() {
         </section>
       </main>
 
-      <BuiltForOpsSection />
       <SiteFooter />
     </div>
   );

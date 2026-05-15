@@ -2,7 +2,6 @@
 import { notFound } from "next/navigation";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
 import type { Metadata } from "next";
 export function generateStaticParams() {
   return CASE_STUDIES.map((c) => ({ slug: c.slug }));

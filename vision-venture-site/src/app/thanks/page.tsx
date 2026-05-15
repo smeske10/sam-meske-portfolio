@@ -1,6 +1,5 @@
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
 
 export const metadata = {
   title: "Thanks",
@@ -39,12 +38,9 @@ export default function ThanksPage() {
             </div>
           </div>
         </section>
-
-        <BuiltForOpsSection />
       </main>
 
       <SiteFooter />
     </div>
   );
 }
-

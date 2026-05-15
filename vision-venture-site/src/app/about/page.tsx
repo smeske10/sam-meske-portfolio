@@ -60,6 +60,8 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <BuiltForOpsSection />
+
         <section id="narrative" className="vv-container py-12 md:py-16">
           <div className="grid gap-10 md:grid-cols-12">
             <div className="md:col-span-4">
@@ -71,8 +73,18 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:col-span-8">
-              <div className="vv-card rounded-3xl p-8 md:p-10">
-                <div className="space-y-7 text-sm leading-8 md:text-base md:leading-8">
+              <details className="vv-card rounded-3xl p-8 md:p-10">
+                <summary className="[&::-webkit-details-marker]:hidden cursor-pointer list-none">
+                  <div className="flex items-center justify-between gap-4">
+                    <div className="text-sm font-semibold">Read the narrative</div>
+                    <div className="vv-muted text-xs">Expand</div>
+                  </div>
+                  <p className="vv-muted mt-3 text-sm leading-7">
+                    Research foundation → operations &amp; analytics → AI product strategy &amp; systems engineering.
+                  </p>
+                </summary>
+
+                <div className="mt-6 space-y-7 text-sm leading-8 md:text-base md:leading-8">
                   <p className="vv-muted">
                     I started in life sciences — B.S. in Human Biology at
                     Duquesne, M.S. in Exercise Science at Bloomsburg where my
@@ -117,7 +129,7 @@ export default function AboutPage() {
                     and I think that's the point.
                   </p>
                 </div>
-              </div>
+              </details>
             </div>
           </div>
         </section>

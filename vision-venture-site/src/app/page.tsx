@@ -136,10 +136,6 @@ export default function Home() {
                     <div className="text-sm font-semibold">
                       Download resume (PDF)
                     </div>
-                    <p className="vv-muted mt-2 text-sm leading-7">
-                      Includes healthcare research leadership, AI product
-                      strategy, and systems engineering.
-                    </p>
                   </div>
                   <a
                     className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
@@ -174,10 +170,6 @@ export default function Home() {
                     <div className="text-sm font-semibold">
                       Selected product &amp; innovation work
                     </div>
-                    <p className="vv-muted mt-2 text-sm leading-7">
-                      Browse the portfolio hub or jump into project-specific
-                      pages.
-                    </p>
                   </div>
                   <a
                     className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
@@ -209,10 +201,6 @@ export default function Home() {
                     <div className="text-sm font-semibold">
                       Skills, expertise, and stack details
                     </div>
-                    <p className="vv-muted mt-2 text-sm leading-7">
-                      A single page with the full grid + color-coded stack
-                      clusters.
-                    </p>
                   </div>
                   <a
                     className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"

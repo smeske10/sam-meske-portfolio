@@ -55,7 +55,7 @@ export default function CaseStudiesIndexPage() {
       icon,
       status: cs.context ?? "Case study",
       tags: cs.tags.slice(0, 3),
-      cta: "View â†’",
+      cta: "View →",
       href: `/case-studies/${cs.slug}`,
       colSpan: idx === 0 || idx === 4 ? 2 : 1,
     };
@@ -72,7 +72,7 @@ export default function CaseStudiesIndexPage() {
               Selected product &amp; innovation case studies
             </h1>
             <p className="vv-muted mt-4 max-w-3xl text-sm leading-7">
-              Systems-oriented AI product strategy work â€” focused on structure,
+              Systems-oriented AI product strategy work — focused on structure,
               decision-making, governance, tradeoffs, and outcomes (not just
               visuals).
             </p>
@@ -90,6 +90,7 @@ export default function CaseStudiesIndexPage() {
         </div>
       </main>
 
+      <BuiltForOpsSection />
       <SiteFooter />
     </div>
   );
