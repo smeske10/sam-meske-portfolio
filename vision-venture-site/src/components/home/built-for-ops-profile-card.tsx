@@ -41,13 +41,13 @@ export function BuiltForOpsProfileCard() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white/5 px-4 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
                 href="/case-studies"
               >
                 View case studies
               </a>
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-4 text-sm font-semibold text-black hover:bg-white/90"
                 href="https://www.linkedin.com/in/sam-meske-ms-mba/"
               >
                 Connect on LinkedIn
