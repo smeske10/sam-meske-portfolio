@@ -225,7 +225,7 @@ export default function AboutPage() {
                     ],
                     [
                       "2022",
-                      "Full Stack Coding Bootcamp — University of Pennsylvania",
+                      "Certificate in Full Stack Software Engineering — University of Pennsylvania",
                     ],
                     [
                       "2022—Present",

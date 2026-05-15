@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     "Systems-oriented AI product strategist with a background in healthcare research and production AI systems.",
   applicationName: "Sam Meske Portfolio",
   metadataBase: new URL(siteUrl),
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/icon.png", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", type: "image/png" }],
+  },
   alternates: {
     canonical: "/",
   },
@@ -32,9 +39,18 @@ export const metadata: Metadata = {
       "Systems-oriented AI product strategist with a background in healthcare research and production AI systems.",
     type: "website",
     url: siteUrl,
+    images: [
+      {
+        url: "https://ik.imagekit.io/i6kon7cps/image%20(1).png",
+        width: 1200,
+        height: 1200,
+        alt: "Sam Meske headshot",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["https://ik.imagekit.io/i6kon7cps/image%20(1).png"],
   },
 };
 

@@ -25,6 +25,14 @@ export async function generateMetadata({
       description: cs.subtitle,
       url: canonical,
       type: "article",
+      images: [
+        {
+          url: "https://ik.imagekit.io/i6kon7cps/image%20(1).png",
+          width: 1200,
+          height: 1200,
+          alt: "Sam Meske headshot",
+        },
+      ],
     },
   };
 }
@@ -284,7 +292,6 @@ export default async function CaseStudyPage({
     </div>
   );
 }
-
 
 
 
