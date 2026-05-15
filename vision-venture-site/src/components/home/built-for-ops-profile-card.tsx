@@ -30,20 +30,20 @@ export function BuiltForOpsProfileCard() {
             </div>
           </div>
 
-          <div className="mt-4 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
+          <div className="mt-4 rounded-2xl bg-[color:var(--tint-1)] p-5 ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
             <p className="vv-muted text-sm leading-7">
               As a naturally curious researcher and problem solver, I've led research and program development, built products, and shipped AI integrations that streamline workflows and improve outcomes. My goal: empower teams to use data + AI to solve real-world problems.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                 href="/case-studies"
               >
                 View case studies
               </a>
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-4 text-sm font-semibold text-black hover:bg-white/90"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-4 text-sm font-semibold text-black ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 hover:bg-white/90 dark:ring-white/10 dark:shadow-none"
                 href="https://www.linkedin.com/in/sam-meske-ms-mba/"
               >
                 Connect

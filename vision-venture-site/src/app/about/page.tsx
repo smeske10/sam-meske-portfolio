@@ -536,13 +536,13 @@ export default function AboutPage() {
               <div className="md:col-span-5 md:flex md:justify-end">
                 <div className="flex w-full flex-col gap-3 sm:flex-row md:w-auto">
                   <a
-                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90 md:w-auto"
+                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 hover:bg-white/90 dark:ring-white/10 dark:shadow-none md:w-auto"
                     href="/case-studies"
                   >
                     View case studies 🡢
                   </a>
                   <a
-                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10 md:w-auto"
+                    className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-5 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10 md:w-auto"
                     href="https://www.linkedin.com/in/sam-meske-ms-mba/"
                     target="_blank"
                     rel="noreferrer"
@@ -565,7 +565,6 @@ export default function AboutPage() {
     </div>
   );
 }
-
 
 
 
