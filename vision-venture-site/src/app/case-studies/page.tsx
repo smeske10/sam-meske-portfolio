@@ -1,6 +1,7 @@
 ﻿import { CASE_STUDIES } from "@/content/caseStudies";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
 import { BentoGrid, type BentoItem } from "@/components/ui/bento-grid";
 import {
   Activity,
@@ -93,6 +94,7 @@ export default function CaseStudiesIndexPage() {
     </div>
   );
 }
+
 
 
 

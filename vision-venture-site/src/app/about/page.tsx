@@ -1,5 +1,6 @@
 ﻿import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
+import { BuiltForOpsSection } from "@/components/BuiltForOpsSection";
 export const metadata = {
   title: "About — Sam Meske",
   description:
@@ -339,6 +340,7 @@ export default function AboutPage() {
     </div>
   );
 }
+
 
 
 

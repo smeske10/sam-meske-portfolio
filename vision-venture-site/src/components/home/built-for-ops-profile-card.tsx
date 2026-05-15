@@ -25,17 +25,19 @@ export function BuiltForOpsProfileCard() {
           <div>
             <div className="text-xl font-semibold leading-tight">Sam Meske</div>
             <div className="vv-muted mt-1 text-sm">
-              AI product strategy • systems engineering • research
+              AI product strategy {"\u2022"} systems engineering {"\u2022"}{" "}
+              research
             </div>
           </div>
 
-
           <div className="mt-4 rounded-2xl bg-white/5 p-5 ring-1 ring-white/10">
             <p className="vv-muted text-sm leading-7">
-              As a naturally curious researcher and problem solver, I've led research and program development, built products, and shipped AI integrations that streamline workflows and improve outcomes. My goal is simple: empower teams to use data and AI to solve real-world problems.
+              As a naturally curious researcher and problem solver, I've led
+              research and program development, built products, and shipped AI
+              integrations that streamline workflows and improve outcomes. My
+              goal is simple: empower teams to use data and AI to solve
+              real-world problems.
             </p>
-
-
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
