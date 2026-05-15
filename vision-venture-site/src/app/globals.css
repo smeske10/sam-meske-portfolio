@@ -5,15 +5,15 @@
   --background: #F7F5FF;
   --foreground: #0B1020;
   --muted: rgba(11, 16, 32, 0.68);
-  --card: rgba(11, 16, 32, 0.04);
-  --card-border: rgba(11, 16, 32, 0.10);
+  --card: rgba(255, 255, 255, 0.86);
+  --card-border: rgba(124, 92, 255, 0.18);
   --accent: #7C5CFF;
   --accent-2: #22D3EE;
   --shadow: rgba(11, 16, 32, 0.16);
 
-  --tint-1: rgba(11, 16, 32, 0.06);
-  --tint-2: rgba(11, 16, 32, 0.10);
-  --line: rgba(11, 16, 32, 0.12);
+  --tint-1: rgba(124, 92, 255, 0.10);
+  --tint-2: rgba(34, 211, 238, 0.12);
+  --line: rgba(124, 92, 255, 0.22);
 
   --radius: 0.85rem;
 }
