@@ -21,6 +21,9 @@ export function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm md:flex">
+          <Link className="vv-link" href="/">
+            Home
+          </Link>
           <Link className="vv-link" href="/about">
             About
           </Link>

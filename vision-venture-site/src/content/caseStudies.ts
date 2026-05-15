@@ -438,7 +438,7 @@ export const CASE_STUDIES: CaseStudy[] = [
   },
   {
     slug: "vv-agent-delivery-system",
-    title: "Vision Venture AI — Agent-Powered Agency Delivery System",
+    title: "Agent-Powered Agency Delivery System",
     subtitle:
       "A complete agentic operating system that takes a lead from discovery to delivery and retention via orchestrated AI workflows.",
     context: "Vision Venture",
