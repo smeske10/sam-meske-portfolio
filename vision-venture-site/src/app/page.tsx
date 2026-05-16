@@ -122,7 +122,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--accent)] px-4 text-sm font-semibold text-white shadow-md shadow-black/15 hover:opacity-95 dark:bg-white/5 dark:text-[color:var(--foreground)] dark:ring-1 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                     href="/resume_sam_meske.pdf"
                     target="_blank"
                     rel="noreferrer"
@@ -156,7 +156,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--accent)] px-4 text-sm font-semibold text-white shadow-md shadow-black/15 hover:opacity-95 dark:bg-white/5 dark:text-[color:var(--foreground)] dark:ring-1 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                     href="/case-studies"
                   >
                     View case studies
@@ -187,7 +187,7 @@ export default function Home() {
                     </div>
                   </div>
                   <a
-                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--accent)] px-4 text-sm font-semibold text-white shadow-md shadow-black/15 hover:opacity-95 dark:bg-white/5 dark:text-[color:var(--foreground)] dark:ring-1 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                     href="/expertise"
                   >
                     View expertise

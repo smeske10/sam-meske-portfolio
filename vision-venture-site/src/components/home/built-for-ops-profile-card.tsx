@@ -37,13 +37,13 @@ export function BuiltForOpsProfileCard() {
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-[color:var(--accent)] px-4 text-sm font-semibold text-white shadow-md shadow-black/15 hover:opacity-95 dark:bg-white/5 dark:text-[color:var(--foreground)] dark:ring-1 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                 href="/case-studies"
               >
                 View case studies
               </a>
               <a
-                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-4 text-sm font-semibold text-black ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-white/90 dark:ring-white/10 dark:shadow-none"
+                className="vv-focus-ring inline-flex h-12 flex-1 items-center justify-center rounded-xl bg-white px-4 text-sm font-semibold text-black ring-1 ring-black/15 shadow-md shadow-black/15 hover:bg-[color:var(--tint-1)] dark:bg-white/5 dark:text-[color:var(--foreground)] dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                 href="https://www.linkedin.com/in/sam-meske-ms-mba/"
               >
                 Connect
