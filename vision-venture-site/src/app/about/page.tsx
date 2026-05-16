@@ -83,7 +83,7 @@ export default function AboutPage() {
                 <summary className="[&::-webkit-details-marker]:hidden cursor-pointer list-none">
                   <div className="flex items-center justify-between gap-4">
                     <div className="text-sm font-semibold">Read the narrative</div>
-                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-sm font-semibold ring-1 ring-white/10">
+                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[color:var(--tint-1)] text-sm font-semibold ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                       <span className="group-open:hidden">+</span>
                       <span className="hidden group-open:inline">−</span>
                     </div>
@@ -252,7 +252,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:col-span-8">
-              <div className="rounded-3xl bg-white/5 p-1 ring-1 ring-white/10">
+              <div className="rounded-3xl bg-[color:var(--tint-1)] p-1 ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                 <div className="vv-card rounded-[22px] p-8 md:p-10">
                   <div className="space-y-6 text-sm leading-8 md:text-base md:leading-8">
                     <p className="vv-muted">
@@ -293,7 +293,7 @@ export default function AboutPage() {
               </h2>
               <p className="vv-muted mt-3 text-sm leading-7">
                 Recent/current research plus selected publications, works in
-                preparation, and conference abstracts.
+                preparation, and abstracts.
               </p>
             </div>
             <div className="md:col-span-8">
@@ -303,30 +303,27 @@ export default function AboutPage() {
                     <div className="text-sm font-semibold">
                       View publications list
                     </div>
-                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-white/5 text-sm font-semibold ring-1 ring-white/10">
+                    <div className="inline-flex h-7 w-7 items-center justify-center rounded-full bg-[color:var(--tint-1)] text-sm font-semibold ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                       <span className="group-open:hidden">+</span>
                       <span className="hidden group-open:inline">−</span>
                     </div>
                   </div>
                   <p className="vv-muted mt-3 text-sm leading-7">
-                    ResearchGate profile and a curated list of accepted,
+                    Google Scholar profile and a curated list of accepted,
                     in-prep, and abstract publications.
                   </p>
                 </summary>
 
                 <div className="mt-6 space-y-8 text-sm leading-8 md:text-base md:leading-8">
                   <div>
-                    <div className="text-sm font-semibold tracking-tight">
-                      Recent / current research
-                    </div>
                     <p className="vv-muted mt-2 text-sm leading-7">
                       <a
                         className="vv-link"
-                        href="https://www.researchgate.net/profile/Sam-Meske"
+                        href="https://scholar.google.com/citations?hl=en&user=iK8nxngAAAAJ"
                         target="_blank"
                         rel="noreferrer"
                       >
-                        ResearchGate: Sam Meske
+                        <span className="font-semibold">Google Scholar:</span> Sam Meske
                       </a>
                     </p>
                   </div>
@@ -565,9 +562,6 @@ export default function AboutPage() {
     </div>
   );
 }
-
-
-
 
 
 

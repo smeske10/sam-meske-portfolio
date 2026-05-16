@@ -78,7 +78,7 @@ export default function CaseStudiesIndexPage() {
             </p>
           </div>
           <a
-            className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
+            className="vv-focus-ring inline-flex h-11 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-4 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
             href="/audit"
           >
             Get an AI Ops audit

@@ -34,13 +34,13 @@ export default function Home() {
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
-                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-gradient-to-r from-violet-500 to-cyan-400 px-5 text-sm font-semibold text-black hover:opacity-95"
+                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-gradient-to-r from-violet-500 to-cyan-400 px-5 text-sm font-semibold text-black shadow-md shadow-black/15 hover:opacity-95 dark:shadow-none"
                     href="/audit"
                   >
                     Get an AI Ops audit
                   </a>
                   <a
-                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-5 text-sm font-semibold ring-1 ring-[color:var(--line)] hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:hover:bg-white/10"
+                    className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-5 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                     href="/case-studies"
                   >
                     See what I build
@@ -52,7 +52,7 @@ export default function Home() {
               <div className="md:col-span-5">
                 <div className="vv-card rounded-3xl p-6">
                   <div className="flex items-center gap-4">
-                    <div className="h-24 w-24 overflow-hidden rounded-2xl bg-white/5 ring-1 ring-white/10">
+                    <div className="h-24 w-24 overflow-hidden rounded-2xl bg-[color:var(--tint-1)] ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
 
                       <img
                         alt="Sam Meske Headshot"
@@ -69,7 +69,7 @@ export default function Home() {
                   </div>
 
                   <div className="mt-6 grid gap-3">
-                    <div className="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+                    <div className="rounded-2xl bg-[color:var(--tint-1)] p-4 ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                       <div className="text-sm font-semibold">
                         What you get
                       </div>
@@ -79,7 +79,7 @@ export default function Home() {
                         <li>Systems diagrams, workflows, and tradeoffs</li>
                       </ul>
                     </div>
-                    <div className="rounded-2xl bg-white/5 p-4 ring-1 ring-white/10">
+                    <div className="rounded-2xl bg-[color:var(--tint-1)] p-4 ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                       <div className="text-sm font-semibold">Best fit</div>
                       <p className="vv-muted mt-2 text-sm">
                         SMB owner/operators and VP/Director-level ops leaders
@@ -90,7 +90,7 @@ export default function Home() {
 
                   <div className="mt-6">
                     <a
-                      className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white text-sm font-semibold text-black hover:bg-white/90"
+                      className="vv-focus-ring inline-flex h-12 w-full items-center justify-center rounded-xl bg-white text-sm font-semibold text-black ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-white/90 dark:ring-white/10 dark:shadow-none"
                       href="/about"
                     >
                       More About Me

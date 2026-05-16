@@ -28,7 +28,7 @@ export function MobileNav() {
           type="button"
           variant="secondary"
           size="icon"
-          className="h-9 w-9 rounded-xl bg-white/5 ring-1 ring-white/10 hover:bg-white/10"
+          className="vv-focus-ring h-9 w-9 rounded-xl bg-[color:var(--card)] ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
           aria-label="Open menu"
         >
           <Menu className="h-4 w-4" />

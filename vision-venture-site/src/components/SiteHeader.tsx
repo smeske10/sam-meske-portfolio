@@ -5,10 +5,10 @@ import { MobileNav } from "@/components/MobileNav";
 
 export function SiteHeader() {
   return (
-    <header className="sticky top-0 z-20 border-b vv-line bg-black/20 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b vv-line bg-white/70 backdrop-blur dark:bg-black/20">
       <div className="vv-container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10">
+          <span className="inline-flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl bg-[color:var(--card)] ring-1 ring-[color:var(--line)] shadow-sm shadow-black/10 dark:bg-white/5 dark:ring-white/10 dark:shadow-none">
             <img
               alt="Sam Meske logo"
               src="https://ik.imagekit.io/i6kon7cps/image%20(1).png"
@@ -35,7 +35,7 @@ export function SiteHeader() {
           </Link>
 
           <Link
-            className="vv-focus-ring rounded-xl vv-panel px-3 py-2 text-sm hover:opacity-95"
+            className="vv-focus-ring rounded-xl vv-panel px-3 py-2 text-sm shadow-sm shadow-black/10 hover:opacity-95 dark:shadow-none"
             href="/audit"
           >
             Get an AI Ops audit

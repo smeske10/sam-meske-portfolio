@@ -24,13 +24,13 @@ export default function ThanksPage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
               <a
-                className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black hover:bg-white/90"
+                className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-white px-5 text-sm font-semibold text-black ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-white/90 dark:ring-white/10 dark:shadow-none"
                 href="/"
               >
                 Back to home
               </a>
               <a
-                className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-white/5 px-5 text-sm font-semibold ring-1 ring-white/10 hover:bg-white/10"
+                className="vv-focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-[color:var(--tint-1)] px-5 text-sm font-semibold ring-1 ring-[color:var(--line)] shadow-md shadow-black/15 hover:bg-[color:var(--tint-2)] dark:bg-white/5 dark:ring-white/10 dark:shadow-none dark:hover:bg-white/10"
                 href="/#audit"
               >
                 Get an AI Ops audit

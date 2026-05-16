@@ -24,7 +24,7 @@ export function PracticeAccordion({ items }: { items: PracticeAccordionItem[] })
               <button
                 type="button"
                 id={buttonId}
-                className="vv-focus-ring flex w-full items-start justify-between gap-4 rounded-2xl px-3 py-3 text-left hover:bg-white/5"
+                className="vv-focus-ring flex w-full items-start justify-between gap-4 rounded-2xl px-3 py-3 text-left hover:bg-[color:var(--tint-1)] dark:hover:bg-white/5"
                 aria-expanded={isOpen}
                 aria-controls={panelId}
                 onClick={() => setOpenIndex(isOpen ? -1 : index)}
@@ -32,7 +32,7 @@ export function PracticeAccordion({ items }: { items: PracticeAccordionItem[] })
                 <span className="text-sm font-semibold leading-6">
                   {item.title}
                 </span>
-                <span className="mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full bg-white/5 text-sm font-semibold ring-1 ring-white/10">
+                <span className="mt-0.5 inline-flex h-7 w-7 flex-none items-center justify-center rounded-full bg-[color:var(--tint-1)] text-sm font-semibold ring-1 ring-[color:var(--line)] dark:bg-white/5 dark:ring-white/10">
                   {isOpen ? "−" : "+"}
                 </span>
               </button>
