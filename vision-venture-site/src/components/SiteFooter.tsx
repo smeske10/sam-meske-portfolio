@@ -9,7 +9,7 @@ export function SiteFooter() {
           <Link className="vv-link" href="/case-studies">
             Case studies
           </Link>
-          <Link className="vv-link" href="/#audit">
+          <Link className="vv-link" href="/audit">
             Get an AI Ops audit
           </Link>
           <a
